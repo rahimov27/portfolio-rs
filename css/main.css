@@ -129,6 +129,19 @@ ul{
     mix-blend-mode: color-dodge;
     color: #fff;
     z-index: 1;
+    animation: headerTitleHideUp 1s ease-in-out;
+}
+
+/* header title animation */
+@keyframes headerTitleHideUp{
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .header-btn{
@@ -138,6 +151,19 @@ ul{
     margin-top: 32px;
     display: flex;
     align-items: center;
+    animation: headerBtnHideUp 1.5s ease-in-out;
+}
+
+
+@keyframes headerBtnHideUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .header-btn p{

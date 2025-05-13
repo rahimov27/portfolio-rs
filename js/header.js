@@ -20,7 +20,3 @@ headerBtn.addEventListener("click", ()=>{
 
 
 
-// headerBtnText.addEventListener("click",()=>{
-//     headerBtnText.textContent = "Stop music";
-//     bgMusic
-// })
