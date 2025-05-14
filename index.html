@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/media.css">
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <title>Portfolio website</title>
 </head>
 <body>
@@ -51,6 +52,97 @@
         </header>
     </div>
 
+
+    <!-- projects section -->
+    <section class="projects">
+        <div class="container">
+            <div class="project-col">
+                <div class="project-row"  data-aos="fade-left" data-aos-duration="3000">
+                    <div class="project-card">
+                        <p class="project-type">App</p>
+                        <h1 class="project-name">SafeTrack</h1>
+                    </div>
+                    <div class="project-card">
+                        <p class="project-type">CRM</p>
+                        <h1 class="project-name">A1 workspace</h1>
+                    </div>
+                </div>
+                <div class="project-row" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="project-card">
+                        <p class="project-type">AI</p>
+                        <h1 class="project-name">Brain Cancer</h1>
+                    </div>
+                    <div class="project-card">
+                        <p class="project-type">Startup</p>
+                        <h1 class="project-name">Bouncie</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- process section -->
+    <section class="process">
+        <img class="step-img" src="/images/step.svg" alt="" data-aos-delay="300" data-aos="fade-left" data-aos-duration="1000">
+        <img class="step-img-two" src="/images/step-2.svg" alt="" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container">
+            <div class="process-row">
+                <div class="process-num" data-aos="fade-up" data-aos-duration="1500">
+                    <h1 class="process-list">1</h1>
+                    <h1 class="process-list">2</h1>
+                    <h1 class="process-list">3</h1>
+                    <h1 class="process-list">4</h1>
+                    <h1 class="process-list">5</h1>
+                    <h1 class="process-list">6</h1>
+                </div>
+                <div class="process-text" data-aos="fade-up" data-aos-duration="2000">
+                    <h1 class="process-list">Discovery</h1>
+                    <h1 class="process-list">Research</h1>
+                    <h1 class="process-list">Structure</h1>
+                    <h1 class="process-list">Design</h1>
+                    <h1 class="process-list">Development</h1>
+                    <h1 class="process-list">Launch</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- expertise -->
+    <section class="expertise">
+        <div class="container">
+            <div class="expertise-row">
+                <div class="expertise-card first">
+                    <h1 class="expertise-card-title">UX & UI Design</h1>
+                    <p class="expertise-card-subtitle">Interfaces that feel right and flow naturally.</p>
+                </div>
+                <div class="expertise-card second">
+                    <h1 class="expertise-card-title">Mobile development</h1>
+                    <p class="expertise-card-subtitle">Native and cross-platform apps with purpose.</p>
+                </div>
+            </div>
+            <div class="expertise-row">
+                <div class="expertise-card third">
+                    <h1 class="expertise-card-title">Backend Development</h1>
+                    <p class="expertise-card-subtitle">Fast, secure, and scalable systems behind the scenes.</p>
+                </div>
+                <div class="expertise-card four">
+                    <h1 class="expertise-card-title">Frontend Developement</h1>
+                    <p class="expertise-card-subtitle">Smooth, responsive, and pixel-precise user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- js link -->
     <script src="/js/header.js"></script>
+
+    <!-- for animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

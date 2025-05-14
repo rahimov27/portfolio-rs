@@ -92,6 +92,7 @@ ul{
 
 .nav-list{
     font-family: "Panchang";
+   
 }
 
 .nav-link.active{
@@ -101,6 +102,12 @@ ul{
     z-index: 2;
 }
 
+ul li{
+    cursor: pointer;
+    z-index: 5;
+}
+
+
 .nav-list a{
     color: #fff;
 }
@@ -109,6 +116,7 @@ ul{
     max-width: 1120px;
     margin: 0 auto;
     padding: 0 20px;
+    
 }
 
 .header-content{
@@ -116,9 +124,10 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     z-index: 3;
     position: relative;
+    padding-top: 160px;
+    padding-bottom: 160px;
 }
 
 .header-title{
@@ -131,6 +140,7 @@ ul{
     z-index: 1;
     animation: headerTitleHideUp 1s ease-in-out;
 }
+
 
 /* header title animation */
 @keyframes headerTitleHideUp{
@@ -184,5 +194,203 @@ ul{
     border-radius: 50%;
     background-color: #10B981;
     margin-left: 10px;
+}
+
+
+
+/* projects */
+.projects{
+padding-top: 160px;
+padding-bottom: 160px;
+}
+
+.project-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-card{
+    border: 1px solid white;
+    padding: 32px;
+    width: 100%;
+}
+
+.project-type{
+    text-align: end;
+    color: #878787;
+}
+
+.project-name{
+    padding-top: 200px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: end;
+}
+
+
+
+/* process */
+
+.process {
+    background-color: #C82D0B;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    display: flex;
+    justify-content: center;  /* по горизонтали */
+    align-items: center;      /* по вертикали */
+}
+
+.process-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    color: #000;
+    gap: 57px; /* чтобы был отступ между строками */
+    text-align: left;
+    font-weight: 500;
+}
+
+.process-num{
+    font-size: 50px;
+    gap: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    padding-right: 32px;
+    color: #000;
+    font-weight: 500;
+}
+
+.process-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.step-img{
+    position: absolute;
+    width: 40%;
+    right: -20%;
+}
+
+.step-img-two{
+    position: absolute;
+    width: 10%;
+    left: 0;
+}
+
+
+
+/* expertise */
+
+.expertise{
+padding-top: 160px;
+padding-bottom: 155px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.expertise-row{
+display: flex;
+flex-direction: row;
+gap: 5px;
+margin-bottom: 5px;
+}
+
+.expertise-card.first{
+background-color: #141414;
+height: 337px;
+width: 60%;
+padding: 30px 24px;
+z-index: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-image: url(/images/expertise-elippse-1.svg);
+background-size: cover;
+z-index: 4;
+transition: all ease-in-out 500ms;
+}
+
+.expertise-card.first:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    background-position: center;
+}
+
+
+
+.expertise-card.second{
+    background-color: #141414;
+    height: 337px;
+    width: 40%;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(/images/expertise-ellipse-2.svg);
+    background-size: cover;
+    z-index: 4;
+    transition: all ease-in-out 500ms;
+}   
+
+.expertise-card.second:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    background-position: center;
+}
+
+.expertise-card.third{
+    background-color: #141414;
+    height: 337px;
+    width: 40%;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(/images/expertise-ellipse-3.svg);
+    background-size: cover;
+    background-position: center;
+    z-index: 4;
+    transition: all ease-in-out 500ms;
+}  
+
+.expertise-card.third:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+    background-position: left;
+}
+
+.expertise-card.four{
+    background-color: #141414;
+    height: 337px;
+    width: 60%;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(/images/expertise-ellipse-4.svg);
+    background-size: cover;
+    z-index: 4;
+    transition: all ease-in-out 500ms;
+}  
+
+.expertise-card.four:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+    background-position: right;
+}
+
+
+.expertise-card-title{
+font-size: 24px;
+font-weight: 500;
+width: 300px;
+}
+
+.expertise-card-subtitle{
+    font-size: 16px;
 }
 
