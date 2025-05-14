@@ -95,4 +95,5 @@ input[type='file'] {
 html, body {
 	width: 100%;
 	overflow-x: hidden; /* 💥 блокирует горизонтальный скролл */
+	scroll-behavior: smooth;
   }

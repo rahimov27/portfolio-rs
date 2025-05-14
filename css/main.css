@@ -1,4 +1,5 @@
 @import url(/css/reset.css);
+@import url(/css/media.css);
 @font-face {
     font-family: "Panchang";
     src: url("./fonts/Panchang-Variable.ttf");
@@ -94,6 +95,11 @@ ul{
     font-family: "Panchang";
    
 }
+
+.burger-menu{
+    display: none;
+}
+
 
 .nav-link.active{
     background-color: #1F1F1F;
@@ -236,6 +242,9 @@ padding-bottom: 160px;
     background-color: #C82D0B;
     padding-top: 160px;
     padding-bottom: 160px;
+    position: relative;
+    z-index: 2;
+    background-image: url(/images/noise.svg);
     display: flex;
     justify-content: center;  /* по горизонтали */
     align-items: center;      /* по вертикали */
@@ -308,8 +317,12 @@ z-index: 1;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-background-image: url(/images/expertise-elippse-1.svg);
-background-size: cover;
+background-image:
+ url(/images/noise.svg),
+ url(/images/expertise-elippse-1.svg);
+ background-size: cover, cover;
+ background-position: center, center;
+ background-repeat: repeat, no-repeat;
 z-index: 4;
 transition: all ease-in-out 500ms;
 }
@@ -317,7 +330,6 @@ transition: all ease-in-out 500ms;
 .expertise-card.first:hover{
     transform: translateY(-10px);
     cursor: pointer;
-    background-position: center;
 }
 
 
@@ -330,8 +342,10 @@ transition: all ease-in-out 500ms;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(/images/expertise-ellipse-2.svg);
-    background-size: cover;
+    background-image: url(/images/noise.svg), url(/images/expertise-ellipse-2.svg);
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: repeat, no-repeat;
     z-index: 4;
     transition: all ease-in-out 500ms;
 }   
@@ -339,7 +353,6 @@ transition: all ease-in-out 500ms;
 .expertise-card.second:hover{
     transform: translateY(-10px);
     cursor: pointer;
-    background-position: center;
 }
 
 .expertise-card.third{
@@ -350,8 +363,10 @@ transition: all ease-in-out 500ms;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(/images/expertise-ellipse-3.svg);
-    background-size: cover;
+    background-image:url(/images/noise.svg), url(/images/expertise-ellipse-3.svg);
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: repeat, no-repeat;
     background-position: center;
     z-index: 4;
     transition: all ease-in-out 500ms;
@@ -360,7 +375,6 @@ transition: all ease-in-out 500ms;
 .expertise-card.third:hover{
     transform: translateY(-15px);
     cursor: pointer;
-    background-position: left;
 }
 
 .expertise-card.four{
@@ -371,8 +385,10 @@ transition: all ease-in-out 500ms;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(/images/expertise-ellipse-4.svg);
-    background-size: cover;
+    background-image:url(/images/noise.svg), url(/images/expertise-ellipse-4.svg);
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: repeat, no-repeat;
     z-index: 4;
     transition: all ease-in-out 500ms;
 }  
@@ -380,7 +396,6 @@ transition: all ease-in-out 500ms;
 .expertise-card.four:hover{
     transform: translateY(-15px);
     cursor: pointer;
-    background-position: right;
 }
 
 
@@ -394,3 +409,48 @@ width: 300px;
     font-size: 16px;
 }
 
+
+
+/* stack */
+
+.stack{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.stack-img{
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* education */
+.education{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.ue-img{
+    position: relative;
+    z-index: 10;
+    width: 100vh;
+    margin: 0 auto;
+}
+
+.when{
+    position: relative;
+    z-index: 10;
+}
+.education-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 17px;
+}
+
+.education-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

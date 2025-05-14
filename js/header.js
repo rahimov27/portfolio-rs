@@ -4,7 +4,7 @@ const headerBtnText = document.getElementById("header-btn-text");
 
 let isMusicPlay = false;
 
-headerBtn.addEventListener("click", ()=>{
+headerBtn.addEventListener("click", function (e){
     if(isMusicPlay){
         bgMusic.pause();
         bgMusic.currentTime = 0;
@@ -16,6 +16,16 @@ headerBtn.addEventListener("click", ()=>{
 
     isMusicPlay = !isMusicPlay;
 })
+
+// burger-menu
+
+const burgerBtn = document.getElementById("burger-btn");
+const burgerList = document.getElementById("burger-list");
+
+burgerBtn.addEventListener("click", ()=>{
+    burgerList.classList.toggle("active");
+})
+
 
 
 
