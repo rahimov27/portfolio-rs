@@ -44,7 +44,7 @@
     .burger-list.active {
         display: flex;
         position: absolute;
-        width: 100vh;
+        width: 100%;
         height: 100vh;
     }
   
@@ -94,4 +94,93 @@
     .expertise-card.four{
         width: 50%;
     }
+
+    .header-title{
+        margin-top: 150px;
+    }
   }
+
+
+  @media screen and (max-width: 393px) {
+    .header-title{
+        font-size: 50px;
+    }
+    .project-name {
+        font-size: 24px;
+    }
+    .project-type{
+        font-size: 14px;
+    }
+    .process-text {
+        font-size: 26px;
+    }
+    .process-list{
+        font-size: 26px;
+    }
+    .process-num {
+        gap: 50px;
+        padding-right: 20px;
+    }
+    .process-text{
+        gap: 50px;
+    }
+    .expertise-row {
+        flex-direction: column;
+    }
+    .expertise-card.first {
+        width: 100%;
+    }
+    .expertise-card.second {
+        width: 100%;
+    }
+    .expertise-card.third {
+        width: 100%;
+    }
+    .expertise-card.four {
+        width: 100%;
+    }
+    .footer-text {
+        font-size: 14px;
+    }
+    .when p {
+        font-size: 14px;
+    }
+    .stack-img{
+        display: none;
+    }
+    .stack-media{
+        display: block;
+        position: relative;
+        z-index: 5;
+    }
+    
+  }
+
+
+@media screen and (max-width: 950px) {
+    .education-info {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .project-name{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .when{
+        font-size: 14px;
+    }
+    .major{
+        font-size: 14px;
+        
+    }
+    .when p {
+        width: 22vh;
+    }
+    .major p {
+        width: 22vh;
+    }
+}

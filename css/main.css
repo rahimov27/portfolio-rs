@@ -2,12 +2,13 @@
 @import url(/css/media.css);
 @font-face {
     font-family: "Panchang";
-    src: url("./fonts/Panchang-Variable.ttf");
-}
-@font-face {
+    src: url("../fonts/Panchang-Variable.ttf");
+  }
+  
+  @font-face {
     font-family: "Lufga";
-    src: url("./fonts/LufgaMedium.ttf");
-}
+    src: url("../fonts/LufgaMedium.ttf");
+  }
 
 
 
@@ -140,11 +141,12 @@ ul li{
     font-size: 80px;
     font-family: "Lufga";
     text-align: center;
+    margin-top: 100px;
     line-height: 1;
     mix-blend-mode: color-dodge;
     color: #fff;
     z-index: 1;
-    animation: headerTitleHideUp 1s ease-in-out;
+    animation: headerTitleHideUp 1s ease-in-out ;
 }
 
 
@@ -214,6 +216,8 @@ padding-bottom: 160px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
+    z-index: 5;
 }
 
 .project-card{
@@ -423,6 +427,10 @@ width: 300px;
     z-index: 2;
 }
 
+.stack-media{
+    display: none;
+}
+
 
 
 /* education */
@@ -441,6 +449,54 @@ width: 300px;
 .when{
     position: relative;
     z-index: 10;
+    background-color: #C82D0B;
+    height: 30vh;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 20px;
+}
+.when p{
+    width: 40vh;
+}
+.major p{
+    width: 40vh;
+}
+
+.major{
+    position: relative;
+    z-index: 10;
+    background-color: #C82D0B;
+    margin-right: 10px;
+    padding: 20px;
+    margin-left: 10px;
+    height: 30vh;
+}
+.right-top-corner{
+    position: absolute;
+    margin: 0;
+    right: -10px;
+    top: -10px;
+}
+.left-top-corner{
+    position: absolute;
+    margin: 0;
+    left: -10px;
+    top: -10px;
+    transform: rotate(270deg);
+}
+.right-bottom-corner{
+    position: absolute;
+    margin: 0;
+    left: -10px;
+    top: 30vh;
+    transform: rotate(180deg);
+}
+.left-bottom-corner{
+    position: absolute;
+    margin: 0;
+    right: -10px;
+    top: 30vh;
+    transform: rotate(90deg);
 }
 .education-content{
     display: flex;
@@ -453,4 +509,46 @@ width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+
+.burger-list{
+    display: none;
+}
+
+
+
+/* footer */
+
+.footer{
+    background-color: #000;
+    height: 50vh;
+    position: relative;
+    z-index: 5;
+}
+
+.footer-content{
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text{
+    font-size: 18px;
+}
+
+.line-border{
+    width: 1px;
+    height: 50vh;
+    background-color: #373737;
+}
+
+.line-bottom {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #373737;
 }
