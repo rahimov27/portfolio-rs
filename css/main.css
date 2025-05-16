@@ -322,8 +322,8 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 background-image:
- url(/images/noise.svg),
- url(/images/expertise-elippse-1.svg);
+ url(./images/noise.svg),
+ url(./images/expertise-elippse-1.svg);
  background-size: cover, cover;
  background-position: center, center;
  background-repeat: repeat, no-repeat;
